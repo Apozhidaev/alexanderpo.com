@@ -1,0 +1,122 @@
+﻿.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.info-panel {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 230px;
+  z-index: 2030;
+}
+.info-panel .alert-success {
+  margin: 5px 0;
+  border-width: 0;
+  color: #4bf;
+  background-color: #90d5ec;
+  -webkit-box-shadow: 0 0 10px rgba(0, 130, 153, 0.5);
+  box-shadow: 0 0 10px rgba(0, 130, 153, 0.5);
+}
+.info-panel .alert-error {
+  margin: 5px 0;
+  border-width: 0;
+  color: #c44e59;
+  background-color: #f27490;
+  -webkit-box-shadow: 0 0 10px rgba(185, 74, 72, 0.5);
+  box-shadow: 0 0 10px rgba(185, 74, 72, 0.5);
+}
+pre {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 19.99px;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+.lead {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  /*font-size: 24px;
+	font-style: normal;
+	font-variant: normal;*/
+  font-weight: 400;
+  /*line-height: 26.4px;*/
+}
+.lead-sm {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 26.4px;
+  padding: 20px 0;
+}
+th {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  /*line-height: 19.99px;*/
+}
+.navbar-default .navbar-nav > li > a {
+  color: #728099;
+  border-bottom-color: transparent;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding: 15px 15px 12px 15px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #545d70;
+  background-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #657187;
+  background-color: #ffffff;
+  border-bottom-color: #abbdd1;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+.navbar-default .navbar-nav > li > a.has-error {
+  color: salmon;
+}
+.navbar-default .navbar-nav > li > a.has-error:hover,
+.navbar-default .navbar-nav > li > a.has-error:focus {
+  color: #f96a59;
+}
+.navbar-default .navbar-nav > .active > a.has-error,
+.navbar-default .navbar-nav > .active > a.has-error:hover,
+.navbar-default .navbar-nav > .active > a.has-error:focus {
+  color: #f96a59;
+}
+.navbar-nav .dropdown-toggle span {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.navbar-nav .dropdown-toggle span.glyphicon {
+  color: lightblue;
+  line-height: 0;
+}
+.board-loading {
+  margin: 100px auto;
+  text-align: center;
+  color: #4bf;
+}
