@@ -197,6 +197,7 @@
     <Folder Include="App\models\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\favicon.ico" />
     <Content Include="App\alpo.js" />
     <Content Include="App\bin\Any.Logs.dll" />
     <Content Include="App\bin\Lifeboard.Common.dll" />
@@ -229,9 +230,9 @@
     <Content Include="App\core\namespaces.js" />
     <Content Include="App\extensions\bindings.js" />
     <Content Include="App\extensions\ecmaScript.js" />
-    <Content Include="App\favicon.ico" />
     <Content Include="App\index.html" />
     <Content Include="App\index.js" />
+    <Content Include="App\less\bg.png" />
     <Content Include="App\less\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
