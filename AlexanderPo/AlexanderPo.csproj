@@ -224,10 +224,12 @@
     <Content Include="App\extensions\ecmaScript.js" />
     <Content Include="App\index.html" />
     <Content Include="App\index.js" />
+    <Content Include="App\less\bg.png" />
+    <Content Include="App\less\visitor.png" />
     <Content Include="App\less\odesk1.png" />
     <Content Include="App\less\odesk2.png" />
     <Content Include="App\less\skype2.png" />
-    <Content Include="App\less\bg.png" />
+    <Content Include="App\less\bg1.png" />
     <Content Include="App\less\outlook.png" />
     <Content Include="App\less\google.png" />
     <Content Include="App\less\youtube.png" />
