@@ -111,9 +111,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="App\bin\Lifeboard.exe.config" />
-    <None Include="App\bin\Lifeboard.vshost.exe.config" />
-    <None Include="App\bin\Lifeboard.vshost.exe.manifest" />
     <None Include="App\cache.appcache" />
     <None Include="App\less\site.less" />
     <None Include="App\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
@@ -200,11 +197,6 @@
     <Content Include="App\favicon.ico" />
     <Content Include="App\alpo.js" />
     <Content Include="App\bin\Any.Logs.dll" />
-    <Content Include="App\bin\Lifeboard.Common.dll" />
-    <Content Include="App\bin\Lifeboard.Common.pdb" />
-    <Content Include="App\bin\Lifeboard.exe" />
-    <Content Include="App\bin\Lifeboard.pdb" />
-    <Content Include="App\bin\Lifeboard.vshost.exe" />
     <Content Include="App\bin\Microsoft.Owin.dll" />
     <Content Include="App\bin\Microsoft.Owin.Host.HttpListener.dll" />
     <Content Include="App\bin\Microsoft.Owin.Host.HttpListener.xml" />
@@ -232,6 +224,10 @@
     <Content Include="App\extensions\ecmaScript.js" />
     <Content Include="App\index.html" />
     <Content Include="App\index.js" />
+    <Content Include="App\less\odesk1.png" />
+    <Content Include="App\less\odesk2.png" />
+    <Content Include="App\less\skype2.png" />
+    <Content Include="App\less\bg.png" />
     <Content Include="App\less\outlook.png" />
     <Content Include="App\less\google.png" />
     <Content Include="App\less\youtube.png" />
@@ -243,7 +239,7 @@
     <Content Include="App\less\facebook1.png" />
     <Content Include="App\less\linkedin1.png" />
     <Content Include="App\less\bgorig.png" />
-    <Content Include="App\less\bg.png" />
+    <Content Include="App\less\bg2.png" />
     <Content Include="App\less\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
