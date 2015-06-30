@@ -225,12 +225,15 @@
     <Content Include="App\index.html" />
     <Content Include="App\index.js" />
     <Content Include="App\less\bg.png" />
+    <Content Include="App\less\facebook1.png" />
+    <Content Include="App\less\linkedin1.png" />
     <Content Include="App\less\visitor.png" />
     <Content Include="App\less\odesk.png" />
     <Content Include="App\less\skype2.png" />
     <Content Include="App\less\bg1.png" />
     <Content Include="App\less\outlook.png" />
     <Content Include="App\less\google.png" />
+    <Content Include="App\less\youtube1.png" />
     <Content Include="App\less\youtube2.png" />
     <Content Include="App\less\skype.png" />
     <Content Include="App\less\facebook2.png" />

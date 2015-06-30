@@ -137,3 +137,9 @@ th {
 .alpos-logo {
   color: #5dc7e5;
 }
+.icon-opacity a {
+  opacity: 0.85;
+}
+.icon-opacity a:hover {
+  opacity: 0.9;
+}
