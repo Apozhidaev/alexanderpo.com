@@ -19,7 +19,8 @@ AlPo.LocalStrings.Rus = (function (__) {
             pages:
             {
                 loading: {
-                    loading: "Александр Пожидаев"
+                    firstName: "Александр",
+                    secondName: "Пожидаев"
                 }
             }
         };

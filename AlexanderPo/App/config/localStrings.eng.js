@@ -20,7 +20,8 @@ AlPo.LocalStrings.Eng = (function (__) {
             pages:
             {
                 loading: {
-                    loading: "Alexander Pozhidaev"
+                    firstName: "Alexander",
+                    secondName: "Pozhidaev"
                 }
             }
         };
