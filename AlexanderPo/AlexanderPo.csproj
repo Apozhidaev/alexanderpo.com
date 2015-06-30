@@ -232,6 +232,16 @@
     <Content Include="App\extensions\ecmaScript.js" />
     <Content Include="App\index.html" />
     <Content Include="App\index.js" />
+    <Content Include="App\less\outlook.png" />
+    <Content Include="App\less\google.png" />
+    <Content Include="App\less\youtube.png" />
+    <Content Include="App\less\skype.png" />
+    <Content Include="App\less\facebook.png" />
+    <Content Include="App\less\linkedin.png" />
+    <Content Include="App\less\google1.png" />
+    <Content Include="App\less\youtube1.png" />
+    <Content Include="App\less\facebook1.png" />
+    <Content Include="App\less\linkedin1.png" />
     <Content Include="App\less\bgorig.png" />
     <Content Include="App\less\bg.png" />
     <Content Include="App\less\site.css">
