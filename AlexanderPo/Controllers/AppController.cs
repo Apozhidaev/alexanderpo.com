@@ -15,7 +15,7 @@ namespace AlexanderPo.Controllers
 #if DEBUG
         private static readonly string Version = Guid.NewGuid().ToString();
 #else
-        private const string Version = "0.1.4";
+        private const string Version = "0.1.8";
 #endif
 
         public AppController(IServiceManager serviceManager) 
@@ -66,7 +66,7 @@ namespace AlexanderPo.Controllers
             }
             else
             {
-                scriptBuilder.AddCache("lifeboard.js");
+                scriptBuilder.AddCache("alpo.js");
             }
 
             const string path = "..\\cache.appcache";

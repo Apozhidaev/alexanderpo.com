@@ -13,6 +13,10 @@ CACHE:
 /plugins/bootstrap/fonts/glyphicons-halflings-regular.woff
 /plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2
 /less/bg.png
+/less/facebook.png
+/less/linkedin.png
+/less/odesk.png
+/less/youtube.png
 /less/site.css
 /core/error.js
 /plugins/modernizr/modernizr-2.6.2.js

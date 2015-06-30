@@ -226,20 +226,19 @@
     <Content Include="App\index.js" />
     <Content Include="App\less\bg.png" />
     <Content Include="App\less\visitor.png" />
-    <Content Include="App\less\odesk1.png" />
-    <Content Include="App\less\odesk2.png" />
+    <Content Include="App\less\odesk.png" />
     <Content Include="App\less\skype2.png" />
     <Content Include="App\less\bg1.png" />
     <Content Include="App\less\outlook.png" />
     <Content Include="App\less\google.png" />
-    <Content Include="App\less\youtube.png" />
+    <Content Include="App\less\youtube2.png" />
     <Content Include="App\less\skype.png" />
+    <Content Include="App\less\facebook2.png" />
+    <Content Include="App\less\linkedin2.png" />
+    <Content Include="App\less\google1.png" />
+    <Content Include="App\less\youtube.png" />
     <Content Include="App\less\facebook.png" />
     <Content Include="App\less\linkedin.png" />
-    <Content Include="App\less\google1.png" />
-    <Content Include="App\less\youtube1.png" />
-    <Content Include="App\less\facebook1.png" />
-    <Content Include="App\less\linkedin1.png" />
     <Content Include="App\less\bgorig.png" />
     <Content Include="App\less\bg2.png" />
     <Content Include="App\less\site.css">
@@ -251,8 +250,12 @@
     <Content Include="App\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="App\plugins\bootstrap\js\bootstrap.js" />
     <Content Include="App\plugins\bootstrap\js\bootstrap.min.js" />
-    <Content Include="App\plugins\bootstrap\less\bootstrap.css" />
-    <Content Include="App\plugins\bootstrap\less\bootstrap.min.css" />
+    <Content Include="App\plugins\bootstrap\less\bootstrap.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="App\plugins\bootstrap\less\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
     <Content Include="App\plugins\datejs\date-ru-RU.js" />
     <Content Include="App\plugins\datejs\date.js" />
     <Content Include="App\plugins\isMobile\isMobile.js" />

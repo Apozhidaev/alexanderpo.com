@@ -53,7 +53,7 @@ pre {
   /* Internet Explorer 5.5+ */
 }
 .lead {
-  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  font-family: Segoe UI, Optima, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
   /*font-size: 24px;
 	font-style: normal;
 	font-variant: normal;*/
@@ -61,7 +61,7 @@ pre {
   /*line-height: 26.4px;*/
 }
 .lead-sm {
-  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  font-family: Segoe UI, Optima, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-variant: normal;
@@ -70,7 +70,7 @@ pre {
   padding: 20px 0;
 }
 th {
-  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  font-family: Segoe UI, Optima, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -126,8 +126,6 @@ th {
   text-align: center;
   color: #6A9;
 }
-
-
 .alpof-logo {
   color: #4682b4;
 }
