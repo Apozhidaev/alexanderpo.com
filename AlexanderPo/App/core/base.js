@@ -357,19 +357,21 @@
             var self = this;
             
             var cache = win.applicationCache;
-            var update = function () {
-                cache.swapCache();
-                if (!__.debug) {
-                    __.app.notice(__.Notices.UpdateReady);
+            if (cache) {
+                var update = function () {
+                    cache.swapCache();
+                    if (!__.debug) {
+                        __.app.notice(__.Notices.UpdateReady);
+                    } else {
+                        win.location.reload();
+                    }
+
+                };
+                if (cache.status == 4) {
+                    update();
                 } else {
-                    win.location.reload();
+                    $(cache).bind('updateready', update);
                 }
-                
-            };
-            if (cache.status == 4) {
-                update();
-            } else {
-                $(cache).bind('updateready', update);
             }
 
             self.render(win.document.getElementById(self.appId), self.model)
