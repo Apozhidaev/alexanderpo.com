@@ -15,7 +15,7 @@ namespace AlexanderPo.Controllers
 #if DEBUG
         private static readonly string Version = Guid.NewGuid().ToString();
 #else
-        private const string Version = "0.1.10";
+        private const string Version = "0.1.11";
 #endif
 
         public AppController(IServiceManager serviceManager) 

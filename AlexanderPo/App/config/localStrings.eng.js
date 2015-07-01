@@ -15,7 +15,7 @@ AlPo.LocalStrings.Eng = (function (__) {
             success: 'Well done',
             error: 'Sorry...',
             notFound: 'Not found',
-            updateReady: 'New changes available (requires a page refresh)',
+            updateReady: 'New updates are available (please refresh the page)',
             submitChanges: 'Changes have been done',
             pages:
             {
