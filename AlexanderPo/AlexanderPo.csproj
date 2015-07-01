@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>App\bin\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>App\bin\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -79,9 +79,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Board.cs" />
+    <Compile Include="AnyApp.cs" />
     <Compile Include="Configuration\AppConfig.cs" />
-    <Compile Include="Configuration\AppConst.cs" />
+    <Compile Include="Configuration\ContentSection.cs" />
+    <Compile Include="Configuration\MediaTypeElement.cs" />
+    <Compile Include="Configuration\MediaTypeElementCollection.cs" />
+    <Compile Include="Configuration\ServiceSection.cs" />
     <Compile Include="Configuration\NetworkSection.cs" />
     <Compile Include="Controllers\Api\AuthorizeController.cs" />
     <Compile Include="Controllers\AppController.cs" />
@@ -110,183 +113,172 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="App\cache.appcache" />
-    <None Include="App\less\site.less" />
-    <None Include="App\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="App\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="App\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="App\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="App\plugins\bootstrap\less\alerts.less" />
-    <None Include="App\plugins\bootstrap\less\badges.less" />
-    <None Include="App\plugins\bootstrap\less\bootstrap.less" />
-    <None Include="App\plugins\bootstrap\less\breadcrumbs.less" />
-    <None Include="App\plugins\bootstrap\less\button-groups.less" />
-    <None Include="App\plugins\bootstrap\less\buttons.less" />
-    <None Include="App\plugins\bootstrap\less\carousel.less" />
-    <None Include="App\plugins\bootstrap\less\close.less" />
-    <None Include="App\plugins\bootstrap\less\code.less" />
-    <None Include="App\plugins\bootstrap\less\component-animations.less" />
-    <None Include="App\plugins\bootstrap\less\dropdowns.less" />
-    <None Include="App\plugins\bootstrap\less\forms.less" />
-    <None Include="App\plugins\bootstrap\less\glyphicons.less" />
-    <None Include="App\plugins\bootstrap\less\grid.less" />
-    <None Include="App\plugins\bootstrap\less\input-groups.less" />
-    <None Include="App\plugins\bootstrap\less\jumbotron.less" />
-    <None Include="App\plugins\bootstrap\less\labels.less" />
-    <None Include="App\plugins\bootstrap\less\list-group.less" />
-    <None Include="App\plugins\bootstrap\less\media.less" />
-    <None Include="App\plugins\bootstrap\less\mixins.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\alerts.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\background-variant.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\border-radius.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\buttons.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\center-block.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\clearfix.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\forms.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\gradients.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\grid-framework.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\grid.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\hide-text.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\image.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\labels.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\list-group.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\nav-divider.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\nav-vertical-align.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\opacity.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\pagination.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\panels.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\progress-bar.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\reset-filter.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\resize.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\responsive-visibility.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\size.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\tab-focus.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\table-row.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\text-emphasis.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\text-overflow.less" />
-    <None Include="App\plugins\bootstrap\less\mixins\vendor-prefixes.less" />
-    <None Include="App\plugins\bootstrap\less\modals.less" />
-    <None Include="App\plugins\bootstrap\less\navbar.less" />
-    <None Include="App\plugins\bootstrap\less\navs.less" />
-    <None Include="App\plugins\bootstrap\less\normalize.less" />
-    <None Include="App\plugins\bootstrap\less\pager.less" />
-    <None Include="App\plugins\bootstrap\less\pagination.less" />
-    <None Include="App\plugins\bootstrap\less\panels.less" />
-    <None Include="App\plugins\bootstrap\less\popovers.less" />
-    <None Include="App\plugins\bootstrap\less\print.less" />
-    <None Include="App\plugins\bootstrap\less\progress-bars.less" />
-    <None Include="App\plugins\bootstrap\less\responsive-embed.less" />
-    <None Include="App\plugins\bootstrap\less\responsive-utilities.less" />
-    <None Include="App\plugins\bootstrap\less\scaffolding.less" />
-    <None Include="App\plugins\bootstrap\less\tables.less" />
-    <None Include="App\plugins\bootstrap\less\theme.less" />
-    <None Include="App\plugins\bootstrap\less\thumbnails.less" />
-    <None Include="App\plugins\bootstrap\less\tooltip.less" />
-    <None Include="App\plugins\bootstrap\less\type.less" />
-    <None Include="App\plugins\bootstrap\less\utilities.less" />
-    <None Include="App\plugins\bootstrap\less\variables.less" />
-    <None Include="App\plugins\bootstrap\less\wells.less" />
-    <None Include="App\scripts.config" />
+    <None Include="App.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Include="App.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Web\cache.appcache" />
+    <None Include="Web\less\site.less" />
+    <None Include="Web\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Web\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Web\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Web\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web\plugins\bootstrap\less\alerts.less" />
+    <None Include="Web\plugins\bootstrap\less\badges.less" />
+    <None Include="Web\plugins\bootstrap\less\bootstrap.less" />
+    <None Include="Web\plugins\bootstrap\less\breadcrumbs.less" />
+    <None Include="Web\plugins\bootstrap\less\button-groups.less" />
+    <None Include="Web\plugins\bootstrap\less\buttons.less" />
+    <None Include="Web\plugins\bootstrap\less\carousel.less" />
+    <None Include="Web\plugins\bootstrap\less\close.less" />
+    <None Include="Web\plugins\bootstrap\less\code.less" />
+    <None Include="Web\plugins\bootstrap\less\component-animations.less" />
+    <None Include="Web\plugins\bootstrap\less\dropdowns.less" />
+    <None Include="Web\plugins\bootstrap\less\forms.less" />
+    <None Include="Web\plugins\bootstrap\less\glyphicons.less" />
+    <None Include="Web\plugins\bootstrap\less\grid.less" />
+    <None Include="Web\plugins\bootstrap\less\input-groups.less" />
+    <None Include="Web\plugins\bootstrap\less\jumbotron.less" />
+    <None Include="Web\plugins\bootstrap\less\labels.less" />
+    <None Include="Web\plugins\bootstrap\less\list-group.less" />
+    <None Include="Web\plugins\bootstrap\less\media.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\alerts.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\background-variant.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\border-radius.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\buttons.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\center-block.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\clearfix.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\forms.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\gradients.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\grid-framework.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\grid.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\hide-text.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\image.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\labels.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\list-group.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\nav-divider.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\nav-vertical-align.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\opacity.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\pagination.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\panels.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\progress-bar.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\reset-filter.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\resize.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\responsive-visibility.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\size.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\tab-focus.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\table-row.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\text-emphasis.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\text-overflow.less" />
+    <None Include="Web\plugins\bootstrap\less\mixins\vendor-prefixes.less" />
+    <None Include="Web\plugins\bootstrap\less\modals.less" />
+    <None Include="Web\plugins\bootstrap\less\navbar.less" />
+    <None Include="Web\plugins\bootstrap\less\navs.less" />
+    <None Include="Web\plugins\bootstrap\less\normalize.less" />
+    <None Include="Web\plugins\bootstrap\less\pager.less" />
+    <None Include="Web\plugins\bootstrap\less\pagination.less" />
+    <None Include="Web\plugins\bootstrap\less\panels.less" />
+    <None Include="Web\plugins\bootstrap\less\popovers.less" />
+    <None Include="Web\plugins\bootstrap\less\print.less" />
+    <None Include="Web\plugins\bootstrap\less\progress-bars.less" />
+    <None Include="Web\plugins\bootstrap\less\responsive-embed.less" />
+    <None Include="Web\plugins\bootstrap\less\responsive-utilities.less" />
+    <None Include="Web\plugins\bootstrap\less\scaffolding.less" />
+    <None Include="Web\plugins\bootstrap\less\tables.less" />
+    <None Include="Web\plugins\bootstrap\less\theme.less" />
+    <None Include="Web\plugins\bootstrap\less\thumbnails.less" />
+    <None Include="Web\plugins\bootstrap\less\tooltip.less" />
+    <None Include="Web\plugins\bootstrap\less\type.less" />
+    <None Include="Web\plugins\bootstrap\less\utilities.less" />
+    <None Include="Web\plugins\bootstrap\less\variables.less" />
+    <None Include="Web\plugins\bootstrap\less\wells.less" />
+    <None Include="Web\scripts.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\models\" />
+    <Folder Include="Web\models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\favicon.ico" />
-    <Content Include="App\alpo.js" />
-    <Content Include="App\bin\Any.Logs.dll" />
-    <Content Include="App\bin\Microsoft.Owin.dll" />
-    <Content Include="App\bin\Microsoft.Owin.Host.HttpListener.dll" />
-    <Content Include="App\bin\Microsoft.Owin.Host.HttpListener.xml" />
-    <Content Include="App\bin\Microsoft.Owin.Hosting.dll" />
-    <Content Include="App\bin\Microsoft.Owin.Hosting.xml" />
-    <Content Include="App\bin\Microsoft.Owin.xml" />
-    <Content Include="App\bin\Newtonsoft.Json.dll" />
-    <Content Include="App\bin\Newtonsoft.Json.xml" />
-    <Content Include="App\bin\Owin.dll" />
-    <Content Include="App\bin\System.Net.Http.Formatting.dll" />
-    <Content Include="App\bin\System.Net.Http.Formatting.xml" />
-    <Content Include="App\bin\System.Web.Http.dll" />
-    <Content Include="App\bin\System.Web.Http.Owin.dll" />
-    <Content Include="App\bin\System.Web.Http.Owin.xml" />
-    <Content Include="App\bin\System.Web.Http.xml" />
-    <Content Include="App\bin\Topshelf.dll" />
-    <Content Include="App\config\config.js" />
-    <Content Include="App\config\localStrings.eng.js" />
-    <Content Include="App\config\localStrings.rus.js" />
-    <Content Include="App\core\app.js" />
-    <Content Include="App\core\base.js" />
-    <Content Include="App\core\error.js" />
-    <Content Include="App\core\namespaces.js" />
-    <Content Include="App\extensions\bindings.js" />
-    <Content Include="App\extensions\ecmaScript.js" />
-    <Content Include="App\index.html" />
-    <Content Include="App\index.js" />
-    <Content Include="App\less\bg.png" />
-    <Content Include="App\less\facebook1.png" />
-    <Content Include="App\less\linkedin1.png" />
-    <Content Include="App\less\visitor.png" />
-    <Content Include="App\less\odesk.png" />
-    <Content Include="App\less\skype2.png" />
-    <Content Include="App\less\bg1.png" />
-    <Content Include="App\less\outlook.png" />
-    <Content Include="App\less\google.png" />
-    <Content Include="App\less\youtube1.png" />
-    <Content Include="App\less\youtube2.png" />
-    <Content Include="App\less\skype.png" />
-    <Content Include="App\less\facebook2.png" />
-    <Content Include="App\less\linkedin2.png" />
-    <Content Include="App\less\google1.png" />
-    <Content Include="App\less\youtube.png" />
-    <Content Include="App\less\facebook.png" />
-    <Content Include="App\less\linkedin.png" />
-    <Content Include="App\less\bgorig.png" />
-    <Content Include="App\less\bg2.png" />
-    <Content Include="App\less\site.css">
+    <Content Include="Web\favicon.ico" />
+    <Content Include="Web\alpo.js" />
+    <Content Include="Web\config\config.js" />
+    <Content Include="Web\config\localStrings.eng.js" />
+    <Content Include="Web\config\localStrings.rus.js" />
+    <Content Include="Web\core\app.js" />
+    <Content Include="Web\core\error.js" />
+    <Content Include="Web\core\namespaces.js" />
+    <Content Include="Web\extensions\bindings.js" />
+    <Content Include="Web\extensions\ecmaScript.js" />
+    <Content Include="Web\index.html" />
+    <Content Include="Web\index.js" />
+    <Content Include="Web\less\bg.png" />
+    <Content Include="Web\less\facebook1.png" />
+    <Content Include="Web\less\linkedin1.png" />
+    <Content Include="Web\less\visitor.png" />
+    <Content Include="Web\less\odesk.png" />
+    <Content Include="Web\less\skype2.png" />
+    <Content Include="Web\less\bg1.png" />
+    <Content Include="Web\less\outlook.png" />
+    <Content Include="Web\less\google.png" />
+    <Content Include="Web\less\youtube1.png" />
+    <Content Include="Web\less\youtube2.png" />
+    <Content Include="Web\less\skype.png" />
+    <Content Include="Web\less\facebook2.png" />
+    <Content Include="Web\less\linkedin2.png" />
+    <Content Include="Web\less\google1.png" />
+    <Content Include="Web\less\youtube.png" />
+    <Content Include="Web\less\facebook.png" />
+    <Content Include="Web\less\linkedin.png" />
+    <Content Include="Web\less\bgorig.png" />
+    <Content Include="Web\less\bg2.png" />
+    <Content Include="Web\less\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
-    <Content Include="App\less\site.min.css">
+    <Content Include="Web\less\site.min.css">
       <DependentUpon>site.css</DependentUpon>
     </Content>
-    <Content Include="App\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="App\plugins\bootstrap\js\bootstrap.js" />
-    <Content Include="App\plugins\bootstrap\js\bootstrap.min.js" />
-    <Content Include="App\plugins\bootstrap\less\bootstrap.css">
+    <Content Include="Web\plugins\anyjs\any.js" />
+    <Content Include="Web\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Web\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Web\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Web\plugins\bootstrap\less\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
     </Content>
-    <Content Include="App\plugins\bootstrap\less\bootstrap.min.css">
+    <Content Include="Web\plugins\bootstrap\less\bootstrap.min.css">
       <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
-    <Content Include="App\plugins\datejs\date-ru-RU.js" />
-    <Content Include="App\plugins\datejs\date.js" />
-    <Content Include="App\plugins\isMobile\isMobile.js" />
-    <Content Include="App\plugins\isMobile\isMobile.min.js" />
-    <Content Include="App\plugins\jqueryui\jquery-ui.css" />
-    <Content Include="App\plugins\jqueryui\jquery-ui.js" />
-    <Content Include="App\plugins\jqueryui\jquery-ui.min.css" />
-    <Content Include="App\plugins\jqueryui\jquery-ui.min.js" />
-    <Content Include="App\plugins\jqueryui\jquery-ui.structure.css" />
-    <Content Include="App\plugins\jqueryui\jquery-ui.structure.min.css" />
-    <Content Include="App\plugins\jquery\jquery-2.1.3.js" />
-    <Content Include="App\plugins\jquery\jquery-2.1.3.min.js" />
-    <Content Include="App\plugins\jquery\jquery.cookie.js" />
-    <Content Include="App\plugins\knockout\knockout-3.2.0.debug.js" />
-    <Content Include="App\plugins\knockout\knockout-3.2.0.js" />
-    <Content Include="App\plugins\modernizr\modernizr-2.6.2.js" />
-    <Content Include="App\plugins\respond\respond.js" />
-    <Content Include="App\plugins\respond\respond.min.js" />
-    <Content Include="App\viewModels\loading.js" />
-    <Content Include="App\viewModels\main.js" />
-    <Content Include="App\viewModels\main\noticeItem.js" />
-    <Content Include="App\views\loading.html" />
-    <Content Include="App\views\main.html" />
+    <Content Include="Web\plugins\isMobile\isMobile.js" />
+    <Content Include="Web\plugins\isMobile\isMobile.min.js" />
+    <Content Include="Web\plugins\jquery\jquery-2.1.3.js" />
+    <Content Include="Web\plugins\jquery\jquery-2.1.3.min.js" />
+    <Content Include="Web\plugins\jquery\jquery.cookie.js" />
+    <Content Include="Web\plugins\knockout\knockout-3.2.0.debug.js" />
+    <Content Include="Web\plugins\knockout\knockout-3.2.0.js" />
+    <Content Include="Web\plugins\modernizr\modernizr-2.6.2.js" />
+    <Content Include="Web\plugins\respond\respond.js" />
+    <Content Include="Web\plugins\respond\respond.min.js" />
+    <Content Include="Web\viewModels\home.js" />
+    <Content Include="Web\viewModels\main.js" />
+    <Content Include="Web\viewModels\main\noticeItem.js" />
+    <Content Include="Web\views\home.html" />
+    <Content Include="Web\views\main.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>if $(ConfigurationName) == Release ..\..\..\Componets\ajaxmin.exe -xml "..\scripts.config"</PreBuildEvent>
+    <PreBuildEvent>if $(ConfigurationName) == Release ..\..\Componets\ajaxmin.exe -xml "..\web\scripts.config"</PreBuildEvent>
   </PropertyGroup>
+  <PropertyGroup>
+    <SlowCheetahTargets Condition=" '$(SlowCheetahTargets)'=='' ">$(LOCALAPPDATA)\Microsoft\MSBuild\SlowCheetah\v2.5.11\SlowCheetah.Transforms.targets</SlowCheetahTargets>
+  </PropertyGroup>
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

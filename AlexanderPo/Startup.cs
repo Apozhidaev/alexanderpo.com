@@ -15,12 +15,6 @@ namespace AlexanderPo
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "Attachment",
-                routeTemplate: "attachment/{userId}/{issueId}/{fileName}",
-                defaults: new { controller = "Content", action = "GetAttachment" }
-            );
-
-            config.Routes.MapHttpRoute(
                 name: "Index",
                 routeTemplate: "",
                 defaults: new { controller = "App", action = "GetIndex" }
@@ -35,7 +29,7 @@ namespace AlexanderPo
             config.Routes.MapHttpRoute(
                 name: "Content",
                 routeTemplate: "{*url}",
-                defaults: new { controller = "App", action = "Get" }
+                defaults: new { controller = "Content", action = "Get" }
             );
 
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();

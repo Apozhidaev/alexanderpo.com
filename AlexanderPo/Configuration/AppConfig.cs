@@ -11,6 +11,8 @@ namespace AlexanderPo.Configuration
         private static readonly string _serviceName;
         private static readonly string[] _urls;
         private static readonly string _logRoot;
+        private static readonly string _defaultMediaType;
+        private static readonly Dictionary<string, string> _mediaTypes = new Dictionary<string, string>();
         static AppConfig()
         {
             var network = (NetworkSection)ConfigurationManager.GetSection("network");
@@ -18,12 +20,16 @@ namespace AlexanderPo.Configuration
             _displayName = "AlexanderPo";
             _serviceName = "AlexanderPo";
 
-#if DEBUG
-            _urls = new[] { AppConst.DefaultUrl };
-#else
-            _urls = network.Url.Split(new[] {',', ';'}, StringSplitOptions.RemoveEmptyEntries);
-#endif
-            _logRoot = Path.Combine("..\\..\\", AppConst.LogDirectoryName);
+            _urls = network.Url.Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries);
+
+            _logRoot = Path.Combine("..\\..\\", "Logs");
+
+            var content = (ContentSection)ConfigurationManager.GetSection("content");
+            _defaultMediaType = content.DefaultMediaType;
+            foreach (MediaTypeElement mediaType in content.MediaTypes)
+            {
+                _mediaTypes.Add(mediaType.Extension, mediaType.Value);
+            }
 
         }
 
@@ -45,6 +51,15 @@ namespace AlexanderPo.Configuration
         public static string LogRoot
         {
             get { return _logRoot; }
+        }
+
+        public static string GetMediaType(string extension)
+        {
+            if (_mediaTypes.ContainsKey(extension))
+            {
+                return _mediaTypes[extension];
+            }
+            return _defaultMediaType;
         }
 
     }
