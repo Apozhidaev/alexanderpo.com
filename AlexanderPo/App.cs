@@ -7,7 +7,7 @@ using Microsoft.Owin.Hosting;
 
 namespace AlexanderPo
 {
-    public class AnyApp
+    public class App
     {
         private IDisposable _webApp;
 

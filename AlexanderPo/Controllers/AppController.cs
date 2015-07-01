@@ -39,7 +39,7 @@ namespace AlexanderPo.Controllers
             }
             else
             {
-                scriptBuilder.AddScript("alpo.js");
+                scriptBuilder.AddScript("app.js");
             }
 
             const string path = "..\\Web\\index.html";
@@ -65,7 +65,7 @@ namespace AlexanderPo.Controllers
             }
             else
             {
-                scriptBuilder.AddCache("alpo.js");
+                scriptBuilder.AddCache("app.js");
             }
 
             const string path = "..\\Web\\cache.appcache";

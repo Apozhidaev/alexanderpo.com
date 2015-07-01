@@ -14,9 +14,9 @@ namespace AlexanderPo
         {
             HostFactory.Run(x =>
             {
-                x.Service<AnyApp>(s =>
+                x.Service<App>(s =>
                 {
-                    s.ConstructUsing(name => new AnyApp());
+                    s.ConstructUsing(name => new App());
                     s.WhenStarted(tc => tc.Start());
                     s.WhenStopped(tc => tc.Stop());
                 });

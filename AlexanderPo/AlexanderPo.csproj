@@ -79,7 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnyApp.cs" />
+    <Compile Include="App.cs" />
     <Compile Include="Configuration\AppConfig.cs" />
     <Compile Include="Configuration\ContentSection.cs" />
     <Compile Include="Configuration\MediaTypeElement.cs" />
@@ -208,15 +208,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web\favicon.ico" />
-    <Content Include="Web\alpo.js" />
+    <Content Include="Web\app.js" />
     <Content Include="Web\config\config.js" />
     <Content Include="Web\config\localStrings.eng.js" />
     <Content Include="Web\config\localStrings.rus.js" />
-    <Content Include="Web\core\app.js" />
-    <Content Include="Web\core\error.js" />
+    <Content Include="Web\core\application.js" />
+    <Content Include="Web\extensions\error.js" />
     <Content Include="Web\core\namespaces.js" />
     <Content Include="Web\extensions\bindings.js" />
-    <Content Include="Web\extensions\ecmaScript.js" />
     <Content Include="Web\index.html" />
     <Content Include="Web\index.js" />
     <Content Include="Web\less\bg.png" />
