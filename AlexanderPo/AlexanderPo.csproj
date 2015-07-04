@@ -262,6 +262,7 @@
     <Content Include="Web\plugins\knockout\knockout-3.2.0.debug.js" />
     <Content Include="Web\plugins\knockout\knockout-3.2.0.js" />
     <Content Include="Web\plugins\modernizr\modernizr-2.6.2.js" />
+    <Content Include="Web\plugins\moment\moment.js" />
     <Content Include="Web\plugins\respond\respond.js" />
     <Content Include="Web\plugins\respond\respond.min.js" />
     <Content Include="Web\viewModels\home.js" />

@@ -9,12 +9,6 @@ __.ViewModels.HomeModel = (function (__, win, $, ko) {
     // private
 
     // public
-    
-    function signOut() {
-        var self = this;
-
-        __.app.signOut();
-    }
 
     // constructor
 
@@ -23,8 +17,6 @@ __.ViewModels.HomeModel = (function (__, win, $, ko) {
         var self = __.createApiObject(__.Page(args));
 
         var api = self.api;
-        api.loadingFailed = ko.observable(false);
-        api.signOut = signOut.bind(self);
         return self.api;
     }
 
