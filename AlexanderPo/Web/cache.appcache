@@ -25,7 +25,7 @@ CACHE:
 /plugins/respond/respond.min.js
 /plugins/knockout/knockout-3.2.0.js
 /core/namespaces.js
-/plugins/anyjs/any.js
+/plugins/kbase/base.js
 $Scripts
 /index.js
 /views/main.html
