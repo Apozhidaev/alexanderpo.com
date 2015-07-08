@@ -300,6 +300,11 @@
                         if (model.isViewLoading) model.isViewLoading(false);
                     });
             }
+            if (model.config.viewId !== undefined) {
+                var defrrId = $.Deferred();
+                defrrId.resolve(win.document.getElementById(model.config.viewId).innerHTML);
+                return defrrId.promise();
+            }
             throw new win.Error("model.config.view is not found");
         }
 
