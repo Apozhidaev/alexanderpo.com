@@ -1,0 +1,25 @@
+{
+  "name": "alexandepo",
+  "version": "0.2.0",
+  "author": "Alexander Pozhidaev",
+  "description": "My site",
+  "contributors": [
+    {
+      "name": "Alexander Pozhidaev",
+      "email": "al.po@outlook.com"
+    }
+  ],
+  "main": "./server.js",
+  "keywords": [
+    "alexandepo"
+  ],
+  "dependencies": {
+    "jade": "*",
+    "express": "~3.1.0"
+  },
+  "noAnalyze": true,
+  "license": "Apache",
+  "engines": {
+    "node": ">=0.6.14"
+  }
+}
