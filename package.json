@@ -1,6 +1,6 @@
 {
   "name": "alexandepo",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Alexander Pozhidaev",
   "description": "My site",
   "contributors": [
@@ -14,12 +14,29 @@
     "alexandepo"
   ],
   "dependencies": {
-    "jade": "*",
-    "express": "~3.1.0"
+    "bootstrap": "^3.3.6",
+    "bootstrap-webpack": "0.0.5",
+    "exports-loader": "^0.6.2",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "imports-loader": "^0.6.5",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2"
   },
-  "noAnalyze": true,
-  "license": "Apache",
-  "engines": {
-    "node": ">=0.6.14"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.4.2",
+    "resolve-url-loader": "^1.4.3",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.10"
   }
 }

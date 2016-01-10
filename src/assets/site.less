@@ -1,0 +1,71 @@
+﻿// Core variables and mixins
+@import "~bootstrap/less/variables.less";
+@import "~bootstrap/less/mixins.less";
+
+body {
+    background: url('/assets/bg.jpg') no-repeat;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    .user-select(none);
+}
+
+.lead {
+    font-family: @headings-font-family;
+    /*font-size: 24px;
+	font-style: normal;
+	font-variant: normal;*/
+    font-weight: 100;
+    /*line-height: 26.4px;*/
+}
+
+.alpof-logo {
+    color: #4682b4;
+}
+
+.alpodot-logo {
+    margin-left: 2px;
+    line-height: 10px;
+    font-size: 35px;
+}
+
+.alpos-logo {
+    color: #5dc7e5;
+}
+
+.social-box {
+    margin-top: -30px;
+    li {
+        margin: 10px;
+        a {
+            img{
+                height: 80px
+            }
+        }
+    }
+}
+
+.social-box-xs {
+    margin-top: 50px;
+    li {
+        margin: 10px;
+        a {
+            img{
+                height: 50px
+            }
+        }
+    }
+}
+
+.icon-opacity {
+    a {
+        opacity: 0.85;
+        color: #456;
+        &:hover {
+            opacity: 0.9;
+            color: #345;
+            text-decoration: none;
+        }
+    }
+}

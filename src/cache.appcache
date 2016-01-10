@@ -1,0 +1,18 @@
+﻿CACHE MANIFEST
+
+NETWORK:
+*
+
+CACHE:
+/favicon.ico
+/assets/bg.jpg
+/assets/facebook.png
+/assets/linkedin.png
+/assets/upwork.png
+/assets/youtube.png
+/assets/github.png
+/assets/vk.png
+/app.js
+
+
+# version: 1.2.7
