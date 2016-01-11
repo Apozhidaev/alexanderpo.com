@@ -51,8 +51,19 @@ body {
     li {
         margin: 10px;
         a {
+            color: #00838f;
+            //font-family: "Brush Script MT",cursive;
+            font-family: Consolas,monaco,monospace;
+            //font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+            //font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+            font-weight: 200;
+            font-style: italic;
+            font-size: medium;
             img{
                 height: 50px
+            }
+            span{
+                text-decoration: underline;
             }
         }
     }
@@ -60,12 +71,14 @@ body {
 
 .icon-opacity {
     a {
-        opacity: 0.9;
-        color: #456;
+        opacity: 0.85;
         &:hover {
-            opacity: 1;
-            color: #345;
+            opacity: 0.9;
             text-decoration: none;
+            span{
+                //text-decoration: none;
+                color: #006064;
+            }
         }
     }
 }
