@@ -17,17 +17,14 @@ var task = (name, fn) => async () => {
 
 task('release', async () => new Promise((resolve, reject) => {
     process.argv.push('release');
-    let config = require('../webpack.config');
-
+    const config = require('../webpack.config');
     const bundler = webpack(config);
 
     function bundle(err) {
         if (err) {
             return reject(err);
         }
-
         return resolve();
     }
-
     bundler.run(bundle);
 }))().catch(err => console.error(err.stack));
