@@ -1,6 +1,6 @@
-const DEBUG = true;
-
 var webpack = require('webpack');
+
+const DEBUG = process.argv.indexOf('release') == -1;
 
 module.exports = {
     entry: './src/index',
@@ -18,7 +18,7 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel',
                 query: {
-                    presets: ['react', 'es2015']
+                    presets: ['stage-0', 'es2015']
                 }
             },
             {
