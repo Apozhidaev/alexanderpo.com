@@ -2,15 +2,12 @@
     background: url('../img/bg.jpg') no-repeat;
 }
 
-.lead {
-    font-family: 'Indie Flower', cursive;
-    font-size: 18px;
+.logo {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-@media (min-width: 768px){
-    .lead {
-        font-size: 22px;
-    }
+.logo a{
+    text-decoration:none
 }
 
 .alpof-logo {
