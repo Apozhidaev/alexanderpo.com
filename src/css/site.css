@@ -1,0 +1,112 @@
+﻿body {
+    background: url('../img/bg.jpg') no-repeat;
+}
+
+.lead {
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+}
+
+@media (min-width: 768px){
+    .lead {
+        font-size: 22px;
+    }
+}
+
+.alpof-logo {
+    color: #4682b4;
+}
+
+.alpodot-logo {
+    color: #f27490;
+    margin-left: 2px;
+    line-height: 10px;
+    font-size: 35px;
+}
+
+.alpos-logo {
+    color: #5dc7e5;
+}
+
+.social-box {
+    margin-top: -30px;
+}
+
+.social-box li {
+    margin: 10px;
+}
+
+.social-box li a img {
+    height: 80px;
+}
+
+.social-box-xs {
+    margin-top: 50px;
+}
+
+.social-box-xs li {
+    margin: 10px;
+}
+
+.social-box-xs li a {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 200;
+    font-style: italic;
+    font-size: medium;
+}
+
+.social-box-xs li a img{
+    height: 50px
+}
+
+.social-box-xs li a span{
+    text-decoration: underline;
+}
+
+.upwork{
+    color: #0f855f;
+}
+
+.facebook{
+    color: #3361a9;
+}
+
+.linkedin{
+    color: #427cbd;
+}
+.github{
+    color: #293534;
+}
+
+.vk{
+    color: #2f4d65;
+}
+
+.icon-opacity a {
+    opacity: 0.85;
+}
+
+.icon-opacity a:hover {
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+a:hover .upwork{
+    color: #096c4c;
+}
+
+a:hover .facebook{
+    color: #214b8c;
+}
+
+a:hover .linkedin{
+    color: #2d64a1;
+}
+
+a:hover .github{
+    color: #1d2827;
+}
+
+a:hover .vk{
+    color: #1d374c;
+}
