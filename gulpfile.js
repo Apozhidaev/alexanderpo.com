@@ -10,7 +10,7 @@ var paths = {
 };
 
 var titles = {
-    "links.html": "links - alexander .pozhidaev"
+    "links.html": "links – alexander .pozhidaev"
 };
 
 gulp.task('clean', function (cb) {
