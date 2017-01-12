@@ -1,5 +1,6 @@
 ﻿body {
     background: url('../img/bg.jpg') no-repeat;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .logo {
@@ -7,7 +8,7 @@
 }
 
 .logo a{
-    text-decoration:none
+    text-decoration: none;
 }
 
 .alpof-logo {
@@ -29,6 +30,10 @@
     margin-top: -30px;
 }
 
+.social-box .more{
+    padding-left: 25px;
+}
+
 .social-box li {
     margin: 10px;
 }
@@ -41,23 +46,23 @@
     margin-top: 50px;
 }
 
+.social-box-xs .more{
+    padding-left: 10px;
+}
+
 .social-box-xs li {
     margin: 10px;
 }
 
 .social-box-xs li a {
     font-family: 'Source Code Pro', monospace;
-    font-weight: 200;
     font-style: italic;
     font-size: medium;
+    text-decoration: none;
 }
 
 .social-box-xs li a img{
     height: 50px
-}
-
-.social-box-xs li a span{
-    text-decoration: underline;
 }
 
 .upwork{
