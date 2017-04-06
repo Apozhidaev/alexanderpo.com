@@ -56,3 +56,17 @@
 .contact a {
     color: #D13076;
 }
+
+@media (max-width: 767px){
+
+    h3, .h3 {
+        font-size: 22px;
+    }
+
+    .social-box {
+        margin-top: 35px;
+    }
+
+}
+
+
