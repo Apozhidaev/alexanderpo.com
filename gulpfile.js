@@ -9,9 +9,7 @@ var paths = {
     src: './src/'
 };
 
-var titles = {
-    "links.html": "links – alexander .pozhidaev"
-};
+var titles = {};
 
 gulp.task('clean', function (cb) {
   rimraf(paths.build, cb);
@@ -32,7 +30,7 @@ gulp.task('build', ['copy'], function () {
 
     return gulp.src(paths.src + '*.html')
         .pipe(insert.transform(function(contents, file) {
-            var context = {title: titles[file.relative] || 'alexander .pozhidaev'};
+            var context = {title: titles[file.relative] || 'Alexander_Pozhidaev'};
             context.body = handlebars.compile(contents)(context);
             return template(context);
         }))
