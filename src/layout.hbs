@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="personal page alexander pozhidaev">
+    <meta name="description" content="The personal page of Alexander Pozhidaev">
     <title>{{title}}</title>
     <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata%7CJosefin+Sans" rel="stylesheet"/>
-    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./css/site.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata%7CJosefin+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/site.css" />
 </head>
+
 <body>
-<section id="body">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 logo">
-                <a href="./" class="pull-left">
-                    <h3><span class="alpof-logo">Alexander</span><span class="alpodot-logo">_</span><span class="alpos-logo">Pozhidaev</span></h3>
-                </a>
+    <section id="body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 logo">
+                    <a href="./" class="pull-left">
+                        <h3><span class="alpof-logo">Alexander</span><span class="alpodot-logo">_</span><span class="alpos-logo">Pozhidaev</span></h3>
+                    </a>
+                </div>
             </div>
+            {{{body}}}
         </div>
-        {{{body}}}
-    </div>
-</section>
+    </section>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-97011260-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
+
 </html>

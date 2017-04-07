@@ -30,7 +30,7 @@ gulp.task('build', ['copy'], function () {
 
     return gulp.src(paths.src + '*.html')
         .pipe(insert.transform(function(contents, file) {
-            var context = {title: titles[file.relative] || 'Alexander_Pozhidaev'};
+            var context = {title: titles[file.relative] || 'Alexander Pozhidaev'};
             context.body = handlebars.compile(contents)(context);
             return template(context);
         }))
