@@ -59,12 +59,27 @@
 
 @media (max-width: 767px){
 
+    body {
+        background-position: right top;
+    }
+
     h3, .h3 {
         font-size: 22px;
     }
 
     .social-box {
         margin-top: 35px;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    body {
+        background-image: url('../img/bg.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-attachment: fixed;
     }
 
 }
