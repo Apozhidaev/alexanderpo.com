@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+.alpoat-logo {
+    color: #D1AF94;
+}
+
 .alpof-logo {
     color: #5587A2;
 }
@@ -57,14 +61,18 @@
     color: #D13076;
 }
 
-@media (max-width: 767px){
-
-    body {
-        background-position: right top;
-    }
+@media (max-width: 767px) {
 
     h3, .h3 {
         font-size: 22px;
+    }
+
+     .alpof-logo {
+        color: #D1AF94;
+    }
+
+    .alpos-logo {
+        color: #D1AF94;
     }
 
     .social-box {
@@ -83,5 +91,3 @@
     }
 
 }
-
-
