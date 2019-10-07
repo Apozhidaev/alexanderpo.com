@@ -19,10 +19,11 @@ a {
   margin: 0 10px;
 }
 
-.header {
+.header h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   margin: 0.75em 0 0.5em;
+  font-weight: normal;
 }
 
 .alpoat-logo {
@@ -96,7 +97,7 @@ a {
     background-attachment: fixed;
   }
 
-  .header {
+  .header h2 {
     font-size: 1.75em;
   }
 
