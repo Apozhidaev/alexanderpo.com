@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.header {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  margin: 0.75em 0 0.5em;
+}
+
+.alpoat-logo {
+  color: #d1af94;
+}
+
+.alpof-logo {
+  color: #5587a2;
+}
+
+.alpodot-logo {
+  color: #d1af94;
+}
+
+.alpos-logo {
+  color: #88b14b;
+}
+
+.content {
+  display: grid;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.link-box {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link-box li {
+  margin: 10px;
+}
+
+.link-box li a {
+  font-family: "Source Code Pro", monospace;
+  font-style: italic;
+  font-size: medium;
+}
+
+.content .link-box:nth-child(1) a {
+  color: #0c4c8a;
+}
+
+.content .link-box:nth-child(2) a {
+  color: #ef562d;
+}
+
+.content .link-box:nth-child(3) a {
+  color: #5c7148;
+}
+
+.content a:hover {
+  border-bottom: 1px solid #d1af94;
+  padding-bottom: .15em;
+}
+
+.contact a {
+  color: #d13076;
+}
+
+.contact a:hover {
+  border-bottom: 1px solid #97c1d8;
+  padding-bottom: .15em;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+  }
+
+  .header {
+    font-size: 1.75em;
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr 4fr;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
