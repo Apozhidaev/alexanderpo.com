@@ -13,6 +13,21 @@ a {
   text-decoration: none;
 }
 
+a[href^=http]:hover {
+  border-bottom: 1px solid #d1af94;
+  padding-bottom: .15em;
+}
+
+a[href^=mailto]:hover {
+  border-bottom: 1px solid #94b89f;
+  padding-bottom: .15em;
+}
+
+a[href^=skype]:hover {
+  border-bottom: 1px solid #97c1d8;
+  padding-bottom: .15em;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -75,18 +90,8 @@ a {
   color: #5c7148;
 }
 
-.content a:hover {
-  border-bottom: 1px solid #d1af94;
-  padding-bottom: .15em;
-}
-
 .contact a {
   color: #d13076;
-}
-
-.contact a:hover {
-  border-bottom: 1px solid #97c1d8;
-  padding-bottom: .15em;
 }
 
 @media (min-width: 768px) {
