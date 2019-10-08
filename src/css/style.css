@@ -5,27 +5,13 @@
 }
 
 body {
+  font-family: "Josefin Sans", sans-serif;
   background-color: #fff;
   color: #333;
 }
 
 a {
   text-decoration: none;
-}
-
-a[href^=http]:hover {
-  border-bottom: 1px solid #d1af94;
-  padding-bottom: .15em;
-}
-
-a[href^=mailto]:hover {
-  border-bottom: 1px solid #94b89f;
-  padding-bottom: .15em;
-}
-
-a[href^=skype]:hover {
-  border-bottom: 1px solid #97c1d8;
-  padding-bottom: .15em;
 }
 
 .container {
@@ -39,6 +25,7 @@ a[href^=skype]:hover {
   font-size: 1.5em;
   margin: 0.75em 0 0.5em;
   font-weight: normal;
+  opacity: 0.75;
 }
 
 .alpoat-logo {
@@ -75,6 +62,10 @@ a[href^=skype]:hover {
 .link-box li a {
   font-family: "Source Code Pro", monospace;
   font-style: italic;
+  padding-bottom: .15em;
+}
+
+.content .link-box li a {
   font-size: medium;
 }
 
@@ -90,8 +81,26 @@ a[href^=skype]:hover {
   color: #5c7148;
 }
 
+.contact li {
+  font-size: 0.9em;
+}
+
 .contact a {
   color: #d13076;
+}
+
+@media (max-width: 768px) {
+  a[href^=http] {
+    border-bottom: 1px dashed #e6d3c3;
+  }
+  
+  a[href^=mailto] {
+    border-bottom: 1px dashed #c5dfcd;
+  }
+  
+  a[href^=skype] {
+    border-bottom: 1px dashed #c3deec;
+  }
 }
 
 @media (min-width: 768px) {
@@ -102,13 +111,30 @@ a[href^=skype]:hover {
     background-attachment: fixed;
   }
 
+  a[href^=http]:hover {
+    border-bottom: 1px dashed #d1af94;
+  }
+  
+  a[href^=mailto]:hover {
+    border-bottom: 1px dashed #94b89f;
+  }
+  
+  a[href^=skype]:hover {
+    border-bottom: 1px dashed #97c1d8;
+  }
+
   .header h2 {
     font-size: 1.75em;
+    opacity: 1;
   }
 
   .content {
     grid-template-columns: 1fr 1fr 4fr;
     margin-top: 40px;
     margin-bottom: 60px;
+  }
+
+  .contact li {
+    font-size: 1em;
   }
 }
