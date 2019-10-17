@@ -13,37 +13,26 @@ body {
   padding: 0 10px;
 }
 
+h1 {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
 
-header h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5em;
-  margin: 0.75em 0 0.5em;
-  font-weight: normal;
-  opacity: 0.65;
+a[href^="http"] {
+  border-bottom: 1px dashed #e6d3c3;
 }
 
-.alpoat-logo {
-  color: #d1af94;
-}
-
-.alpof-logo {
-  color: #5587a2;
-}
-
-.alpodot-logo {
-  color: #d1af94;
-}
-
-.alpos-logo {
-  color: #88b14b;
+a[href^="mailto"],
+a[href^="skype"] {
+  border-bottom: 1px dashed #c3deec;
 }
 
 main {
   display: grid;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -86,23 +75,18 @@ footer a {
   color: #d13076;
 }
 
-@media (max-width: 768px) {
-  a[href^="http"] {
-    border-bottom: 1px dashed #e6d3c3;
-  }
-
-  a[href^="mailto"],
-  a[href^="skype"] {
-    border-bottom: 1px dashed #c3deec;
-  }
-}
-
 @media (min-width: 768px) {
   body {
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-attachment: fixed;
+  }
+
+  a[href^="http"],
+  a[href^="mailto"],
+  a[href^="skype"] {
+    border-bottom: none;
   }
 
   a[href^="http"]:hover {
@@ -114,9 +98,28 @@ footer a {
     border-bottom: 1px dashed #97c1d8;
   }
 
-  header h1 {
+  h1 {
+    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: normal;
     font-size: 1.75em;
-    opacity: 1;
+    margin: 0.75em 0 0.25em;
+  }
+
+  .alpoat-logo {
+    color: #d1af94;
+  }
+
+  .alpof-logo {
+    color: #5587a2;
+  }
+
+  .alpodot-logo {
+    color: #d1af94;
+  }
+
+  .alpos-logo {
+    color: #88b14b;
   }
 
   main {
