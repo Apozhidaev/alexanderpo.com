@@ -8,24 +8,21 @@ body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #fff;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
 }
 
 a {
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
-
-.header h2 {
+header h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   margin: 0.75em 0 0.5em;
   font-weight: normal;
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 .alpoat-logo {
@@ -44,10 +41,10 @@ a {
   color: #88b14b;
 }
 
-.content {
+main {
   display: grid;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .link-box {
@@ -56,49 +53,46 @@ a {
 }
 
 .link-box li {
-  margin: 10px;
+  margin: 13px;
 }
 
 .link-box li a {
   font-family: "Source Code Pro", monospace;
   font-style: italic;
-  padding-bottom: .15em;
+  padding-bottom: 0.15em;
 }
 
-.content .link-box li a {
+main .link-box li a {
   font-size: medium;
 }
 
-.content .link-box:nth-child(1) a {
+main .link-box:nth-child(1) a {
   color: #0c4c8a;
 }
 
-.content .link-box:nth-child(2) a {
+main .link-box:nth-child(2) a {
   color: #ef562d;
 }
 
-.content .link-box:nth-child(3) a {
+main .link-box:nth-child(3) a {
   color: #5c7148;
 }
 
-.contact li {
+footer li {
   font-size: 0.9em;
 }
 
-.contact a {
+footer a {
   color: #d13076;
 }
 
 @media (max-width: 768px) {
-  a[href^=http] {
+  a[href^="http"] {
     border-bottom: 1px dashed #e6d3c3;
   }
-  
-  a[href^=mailto] {
-    border-bottom: 1px dashed #c5dfcd;
-  }
-  
-  a[href^=skype] {
+
+  a[href^="mailto"],
+  a[href^="skype"] {
     border-bottom: 1px dashed #c3deec;
   }
 }
@@ -111,30 +105,27 @@ a {
     background-attachment: fixed;
   }
 
-  a[href^=http]:hover {
+  a[href^="http"]:hover {
     border-bottom: 1px dashed #d1af94;
   }
-  
-  a[href^=mailto]:hover {
-    border-bottom: 1px dashed #94b89f;
-  }
-  
-  a[href^=skype]:hover {
+
+  a[href^="mailto"]:hover,
+  a[href^="skype"]:hover {
     border-bottom: 1px dashed #97c1d8;
   }
 
-  .header h2 {
+  header h1 {
     font-size: 1.75em;
     opacity: 1;
   }
 
-  .content {
+  main {
     grid-template-columns: 1fr 1fr 4fr;
     margin-top: 40px;
     margin-bottom: 60px;
   }
 
-  .contact li {
+  footer li {
     font-size: 1em;
   }
 }
