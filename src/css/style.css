@@ -21,15 +21,6 @@ a {
   text-decoration: none;
 }
 
-a[href^="http"] {
-  border-bottom: 1px dashed #e6d3c3;
-}
-
-a[href^="mailto"],
-a[href^="skype"] {
-  border-bottom: 1px dashed #c3deec;
-}
-
 main {
   display: grid;
   margin-top: 20px;
@@ -73,6 +64,12 @@ footer li {
 
 footer a {
   color: #d13076;
+}
+
+@media (max-width: 767px) {
+  a[href^="http"]::after {
+    content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDE2IDE2Ij4KPHBhdGggZmlsbD0iI2QxYWY5NCIgZD0iTTE0IDE2di0xMWwtMSAxdjloLTEydi0xMmg5bDEtMWgtMTF2MTR6Ij48L3BhdGg+CjxwYXRoIGZpbGw9IiM5OTk5OTkiIGQ9Ik0xNiAwaC01bDEuOCAxLjgtNi44IDYuOCAxLjQgMS40IDYuOC02LjggMS44IDEuOHoiPjwvcGF0aD4KPC9zdmc+Cg==")
+  }
 }
 
 @media (min-width: 768px) {
