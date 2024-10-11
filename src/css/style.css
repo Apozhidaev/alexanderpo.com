@@ -81,8 +81,7 @@ footer a {
   }
 
   a[href^="http"],
-  a[href^="mailto"],
-  a[href^="skype"] {
+  a[href^="mailto"] {
     border-bottom: none;
   }
 
@@ -90,8 +89,8 @@ footer a {
     border-bottom: 1px dashed #d1af94;
   }
 
-  a[href^="mailto"]:hover,
-  a[href^="skype"]:hover {
+  footer a[href^="mailto"]:hover,
+  footer a[href^="http"]:hover {
     border-bottom: 1px dashed #97c1d8;
   }
 
