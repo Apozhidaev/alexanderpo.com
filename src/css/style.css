@@ -121,7 +121,7 @@ footer a {
   main {
     grid-template-columns: 1fr 1fr 4fr;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   footer li {
